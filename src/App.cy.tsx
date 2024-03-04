@@ -2,7 +2,17 @@ import React from 'react'
 import App from './App'
 
 describe('<App />', () => {
-  befor
+  // beforeEach(() => {
+  //   cy.intercept({
+  //     method: "Get",
+  //     url: `user`,
+  //   },
+  //     {
+  //       statusCode: 200,
+  //       fixture: "data.json",
+  //     });
+  // });
+
   it('renders', () => {
     // see: https://on.cypress.io/mounting-react
     cy.mount(<App />)
